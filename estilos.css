@@ -1,0 +1,127 @@
+/* estilos generales */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 0; /*el 40 es para arriba y abajo y 0 para los lados*/
+    background: url("imagenes/footer.jpeg") no-repeat center center / cover;/* este no repeat center es para qu la imagen no se repita y solo quede una grande y centrada*/
+}
+
+/* contenedor */
+.contenedor{
+    width: 700px;
+    min-height: 500px;
+    background-color: white;
+    background: url(imagenes/paisaje4.jpg);
+    padding: 40px;
+    border: 5px solid black;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* titulo */
+h1{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+/* input */
+input{
+    width: 80%;
+    height: 50px;
+    font-size: 25px;
+    margin: 20px;
+    padding: 10px;
+    border: 4px solid #404040;
+    border-radius: 10px;
+
+}
+
+/* boton */
+button{
+    width: 150px;
+    height: 60px;
+    padding: 10px;
+    color: white;
+    background-color: #1312a8;
+    font-size: 22px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;  /* eto hace que el cursor sea una mano */
+    user-select: none; /* hace que no pueda seleccionar el texto del boton*/
+    transition: all 0.3s;
+}
+
+button:hover{
+    background-color: #407ba6;
+    transform: scale(1.05);
+}
+
+/* lista de tareas */
+#lista-de-tareas{
+    width: 80%;
+    margin-top: 20px;
+
+}
+
+/* tareas */
+.tarea{
+    width: 100%;
+    min-height: 70px;
+    font-size: 25px;
+    padding: 10px;
+    margin-top: 10px;
+    color: white;
+    background-color: #407ba6;
+    border: solid black;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    
+}
+
+/* tarea completada */
+.tarea.completada{
+    text-decoration: line-through; /*tachar el texto*/
+    background-color: black;
+    border: none;
+}
+
+.tarea p{
+    max-width: 350px;
+}
+
+/* icocnos */
+i{
+    margin: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.icono-completar{
+    color: rgb(57, 222, 16);
+}
+
+.icono-eliminar{
+    color: rgb(255,255,255 );
+}
+
+.icono-completar:hover,
+.icono-eliminar:hover{
+    background-color: rgb(255,255,255,0.523 );
+}
